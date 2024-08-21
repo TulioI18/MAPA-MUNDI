@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive World Map</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+    <style>
+        #map {
+            height: 600px;
+            width: 100%;
+            margin-top: 20px;
+        }
+        .country-name {
+            background-color: white;
+            padding: 5px;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        h1 {
+            text-align: center;
+        }
+        marquee {
+            font-size: 24px;
+            color: white;
+            background: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ccc;
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <h1>    <marquee behavior="scroll" direction="left" scrollamount="10">
+        Programado por Tulio Inocente Campos
+     </marquee></h1>
+
+    <h1>Mapa Mundial Interactivo</h1>
+    <div id="map"></div>
+
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="https://unpkg.com/leaflet.vectorgrid/dist/Leaflet.VectorGrid.bundled.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
